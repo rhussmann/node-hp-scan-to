@@ -147,6 +147,8 @@ services:
       - PGID=1000
       - PUID=1000
       - TZ=Europe/London
+      - PAPERLESS_POST_DOCUMENT_URL=http://example:8000/api/documents/post_document/
+      - PAPERLESS_TOKEN=a6dff4cb0e83990a1948cd46ffa8d6abc04cd68a
     volumes:
       - /some/host/directory/or/volume:/scan
     restart: always
