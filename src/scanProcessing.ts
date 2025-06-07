@@ -601,7 +601,7 @@ async function uploadToPaperless(
 
   const form = new FormData();
   form.append("document", fileStream);
-  form.append("storage_path", "double-sided");
+  form.append("double_sided", "true");
 
   console.log(`Start uploading to paperless: ${filePath}`);
   try {
